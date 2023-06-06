@@ -1,0 +1,98 @@
+body{
+    font-family: Arial;
+    padding:0;
+    margin:0;
+
+    /* Image de fond */
+    /* background-image: url('images/bas_agora.svg'); */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* height: 150vh; */
+}
+
+/* Lien Menu */
+
+a{
+    text-decoration: none;
+    color: #a1a1a1;
+}
+
+a:hover, i:hover{
+    color: white;
+    transition-duration: 1000ms;
+}
+
+a:not(:hover), i:not(:hover){
+    color: #a1a1a1;
+    transition-duration: 1000ms;
+}
+
+/* Barre de Navigation */
+
+nav{
+    background-color: #000000;
+    padding: 5px;
+}
+
+#navbar{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.li{
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10%;
+    color: white;
+}
+
+#home{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+    padding: 10px
+}
+
+/* Scroll BAR */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+  }
+  
+  /* Poignée (thumb) de la barre de défilement */
+  ::-webkit-scrollbar-thumb {
+    background-color: #b4b4b4; /* Couleur de la poignée */
+    border-radius: 5px; /* Bordure arrondie */
+  }
+  
+  /* Rail (track) de la barre de défilement */
+  ::-webkit-scrollbar-track {
+    background-color: #dcdcdc; /* Couleur du rail */
+    border-radius: 5px; /* Bordure arrondie */
+  }
+
+/* Div */
+
+#left{
+    left: 100%;
+}
+
+#right{
+    float: right;
+}
