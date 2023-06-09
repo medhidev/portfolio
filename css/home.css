@@ -1,0 +1,120 @@
+body{
+    font-weight: bold;
+    cursor: url('circle-cursor.png') 16 16, auto;
+    color: gray;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+li{
+    padding-left: 50px;
+}
+  
+.list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+
+a{
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 18px;
+    color: gray;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+  
+#menu:focus,
+#menu:hover {
+    color: #fff;
+}
+  
+#menu:focus:after,
+#menu:hover:after {
+    width: 100%;
+    left: 0%;
+}
+  
+#menu:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* EMail */
+#email {
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+}
+  
+#email:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+}
+  
+#email:hover:before {
+    background-color: #fff;
+    width: 3rem;
+}
