@@ -8,17 +8,16 @@ mode.addEventListener("click", () => {
     const footer = document.querySelector("footer");
 
     if (mode.id === "light_mode") {
-        console.log("marche light")
         header.className = "light";
         body.className = "light";
         footer.className = "light";
+        mode.textContent = "dark_mode";
         mode.id = "dark_mode";
     } else if (mode.id === "dark_mode") {
-        console.log("marche dark")
-       header.className = "dark";
+        header.className = "dark";
         body.className = "dark";
         footer.className = "dark";
-        mode.id = "light_mode"; 
+        mode.id = "light_mode";
+        mode.textContent = "sunny";
     }
-    console.log("marche pas")
 });

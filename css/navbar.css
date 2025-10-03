@@ -1,49 +1,57 @@
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centre horizontalement */
-    margin-top: 2rem;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0.75rem;
+    padding: 0.75rem 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem; /* espace entre les icônes */
+    gap: 1.5rem;
     background-color: #21212195;
-    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
     box-shadow: 0 10px 50px 0 rgba(30, 30, 32, 0.63);
-    
 }
 
+/* Séparateur */
 .separator + li {
-  border-left: 1px solid #2d2e2e;
-  padding-left: 1rem; /* espace après la barre */
-
+    border-left: 1px solid #2d2e2e;
+    padding-left: 1rem;
 }
 
-/* Scroll bar smooth */
-/* .scroll-container {
-  width: 350px;
-  height: 200px;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-} */
-
-.scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 5em;
+/* Icônes */
+.icon {
+    color: white;
+    font-size: 1.4rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
 }
 
-/* .icon {
-  filter: invert(0);
-} */
+.icon:hover {
+    color: #929292;
+    transition: 0.5s;
+}
+
+/* Mode clair/sombre */
+#light_mode, #dark_mode {
+    cursor: pointer;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 600px) {
+    nav ul {
+        gap: 1rem; /* réduit l’espace */
+        padding: 0.5rem 1rem;
+    }
+
+    .icon {
+        font-size: 1.1rem; /* icônes plus petites */
+    }
+}

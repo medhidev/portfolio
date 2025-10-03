@@ -13,6 +13,7 @@
 
     <!-- ICON -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <header class="dark">
@@ -21,19 +22,19 @@
     <nav>
         <ul>
             <li>
-                <a href="#about"><span class="material-symbols-outlined icon">home</span></a>
+                <a href="#global_info" class="icon"><span class="material-symbols-outlined icon">home</span></a>
             </li>
             <li>
-                <a href="#background"><span class="material-symbols-outlined icon">person</span></a>
+                <a href="#background" class="icon"><span class="material-symbols-outlined icon">person</span></a>
             </li>
             <li>
-                <a href="#hard_skills"><span class="material-symbols-outlined icon">book_2</span></a>
+                <a href="#hard_skills" class="icon"><span class="material-symbols-outlined icon">book_2</span></a>
             </li>
             <li>
-                <a href="#projects"><span class="material-symbols-outlined icon">school</span></a>
+                <a href="#projects" class="icon"><span class="material-symbols-outlined icon">school</span></a>
             </li>
             <li>
-                <a href="#contact"><span class="material-symbols-outlined icon">mode_comment</span></a>
+                <a href="#contact" class="icon"><span class="material-symbols-outlined icon">mode_comment</span></a>
             </li>
             <li class="separator"></li>
             <li>
@@ -43,20 +44,26 @@
     </nav>
 
     <!-- Profil Informations -->
-    <div id="info_top">
-        <h1>Grimal Medhi</h1>
-        <h2>Étudiant en Informatique</h2>
-        <h3><img src="logo/map-pin.svg" alt="My Happy SVG" width="15px" class="icon">
-            France, Toulouse | Castres
-        </h3>
+    <section id="global_info">
+        <div id="head_info">
+            <h1>Grimal Medhi</h1>
+            <h2>Étudiant en Informatique</h2>
+            <h3>
+                <span class="material-symbols-outlined">location_on</span>
+                France, Toulouse | Castres
+            </h3>
 
-        <!-- Links -->
-        <ul id="link_info">
-            <li><a href="#"><img src="logo/linkedin.svg" alt="Linkedin" width="25px" class="icon"></a></li>
-            <li><a href="#"><img src="logo/github.svg" alt="Github" class="icon"></a></li>
-            <li><a href="#"><img src="logo/mail.svg" alt="Email" class="icon"></a></li>
-        </ul>
-    </div>
+            <!-- Links -->
+            <ul id="link_info">
+                <li><a href="https://www.linkedin.com/in/medhi-grimal-89aa251b2/" target="_blank"><span class="fa-brands fa-linkedin icon" aria-hidden="true"></span></a></li>
+                <li><a href="https://github.com/medhidev" target="_blank"><span class="fa-brands fa-github icon" aria-hidden="true"></span></a></li>
+                <li><a href="mailto:grimalmedhi1@gmail.com"><span id="light_mode" class="material-symbols-outlined icon">mail</span></a></li>
+            </ul>
+        </div>
+        <div id="img_container">
+            <img src="img/profil.png" alt="photo pro" id="profil_img">
+        </div>
+    </section>
 </header>
 
 <body class="dark scroll-container">
